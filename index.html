@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body, p  {
+            margin: unset;
+            padding: unset;
+        }
+
+        h1, h2 {
+            margin: unset;
+            font-size: unset;
+            font-weight: unset;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        :root {
+            font-size: 62.5%;
+            font-family: var(--font-en);
+        }
+
+      :root {
+          --font-en: "Montserrat";
+          --font-ko: "arial";
+          --color-white:#ffffff;
+          --color-grey-10: #eeeeee;
+          --color-grey-30: #c3c3c3;
+          --color-grey-60: #999999;
+      }
+
+      section {
+         max-width: 800px;
+         margin: 0 auto;
+      }
+
+      .title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin: 4rem 0;
+        text-align: center;
+      }
+
+      .search-section {
+        display: flex;
+      }
+
+      .searchbar-input {
+        flex-grow: 1;
+        line-height: 2.6rem;
+        font-size: 2rem;
+        border: 2px solid var(--color-grey-10);
+      }
+
+      .btn--search {
+        background-color: var(--color-white);
+        color: var(--color-grey-60);
+        border: 2px solid var(--color-grey-30);
+        border-radius: 4px;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .article-single {
+        font-size: 1.6rem;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 1rem;
+        border: 1px solid var(--color-grey-30);
+        border-radius: 2px;
+      }
+
+      .article-cover {
+        width: 220px;
+        height: 160px;
+        object-fit: contain;
+      }
+
+      .article-title {
+        font-size: 2.4rem;
+        font-weight: 600;
+      }
+
+      .article-main {
+        display: flex;
+        flex-direction: column;
+        row-gap : 0.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1 class="title">News Search</h1>
+      <header class="searchbar">
+        <form id="form">
+          <div class="search-section">
+            <input
+              class="searchbar-input"
+              type="text"
+              placeholder="Search for anything that you're interested in!"
+            />
+            <button class="btn--search">Search</button>
+          </div>
+        </form>
+      </header>
+
+      <div class="main">
+        <!-- <div class="article-single">
+          <img class="article-cover" src="camera.jpeg" alt="article-photo" />
+
+          <div class="article-main">
+            <h2 class="article-title">멋쟁이사자처럼, 스타트업</h2>
+            <p class="article-info">
+              <span class="author">조효진</span>
+              <span class="published-date">2024.04.29 -</span>
+              <a>more</a>
+            </p>
+            <p class="article-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ad
+              blanditiis veritatis dolor, numquam omnis, atque debitis
+              architecto corrupti ab veniam odio adipisci consequuntur! Sit
+              facilis consectetur aperiam quae veritatis. Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Nulla ad blanditiis veritatis
+              dolor, numquam omnis, atque debitis architecto corrupti ab veniam
+              odio adipisci consequuntur! Sit facilis consectetur aperiam quae
+              veritatis.
+            </p>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
